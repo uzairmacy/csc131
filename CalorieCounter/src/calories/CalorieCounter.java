@@ -14,7 +14,8 @@ public class CalorieCounter {
 		User newUser = new User(null, 0, 0, 0, null);
 		newUser.getUserInfo();
 		
-		System.out.println(""
+		System.out.println("heres your bmi " + String.format("%.2f", newUser.BMI()));
+		
 		
 		System.out.println("Hey " + newUser.getFullName() + "! What did you eat today?");
 		

@@ -21,7 +21,7 @@ public class User{                      //Define all the classes and methods her
 
 
   public float BMI(){
-      float BMI = weight/(height*height);
+      float BMI = (weight/(height*height))*703;
       return BMI;
   }
   
