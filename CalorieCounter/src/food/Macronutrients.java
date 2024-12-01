@@ -3,14 +3,14 @@ package food;
 import java.util.Scanner;
 
 
-public class Macronutrients{
+public class Macronutrients {
   private float fats; 
   private float carbs;
   private float fiber;
   private float protein;
   private float calories;
 
-  public Macronutrients(float fats, float carbs, float fiber, float protein, float calories){
+  public Macronutrients(float fats, float carbs, float fiber, float protein, float calories) {
     this.fats = fats;
     this.carbs = carbs;
     this.fiber = fiber;
@@ -48,7 +48,7 @@ public class Macronutrients{
   public void setCalories(float calories){
     this.calories = calories;
   }
-  public void printMacronutrients()
+  public void printMacronutrients() {
 
 
 
