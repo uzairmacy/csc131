@@ -58,6 +58,54 @@ public class User{                      //Define all the classes and methods her
 	   OuncesOfWater = scanner.nextInt();
 	   scanner.close();
  }
+   
+   public String getFullName() {
+       return fullName;
+   }
+
+   public void setFullName(String fullName) {
+       this.fullName = fullName;
+   }
+
+   public int getAge() {
+       return age;
+   }
+
+   public void setAge(int age) {
+       this.age = age;
+   }
+
+   public float getHeight() {
+       return height;
+   }
+
+   public void setHeight(float height) {
+       this.height = height;
+   }
+
+   public float getWeight() {
+       return weight;
+   }
+
+   public void setWeight(float weight) {
+       this.weight = weight;
+   }
+
+   public String getGender() {
+       return gender;
+   }
+
+   public void setGender(String gender) {
+       this.gender = gender;
+   }
+
+   public double getOuncesOfWater() {
+       return OuncesOfWater;
+   }
+
+   public void setOuncesOfWater(double OuncesOfWater) {
+       this.OuncesOfWater = OuncesOfWater;
+   }
  
  
 }
