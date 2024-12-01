@@ -37,33 +37,6 @@ public class Macronutrients {
     return protein;
   }
   
-  public float getCalories(){
-    return calories;
-  }
-  
-  public void setName(String name) {
-	this.name = name;
-  }
-  
-  public void setFats(float fats){
-    this.fats = fats;
-  }
-  
-  public void setCarbs(float carbs){
-    this.carbs = carbs;
-  }
-  
-  public void setFiber(float fiber){
-    this.fiber = fiber;
-  }
-  
-  public void setProtein(float protein){
-    this.protein = protein;
-  }
-  
-  public void setCalories(float calories){
-    this.calories = calories;
-  }
   public void getMacros() {
 	   Scanner scanner = new Scanner(System.in);
 	   System.out.println("Enter the food you've eaten:");

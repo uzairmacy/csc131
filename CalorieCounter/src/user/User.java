@@ -11,12 +11,13 @@ public class User{                      //Define all the classes and methods her
       private float OuncesOfWater; // water drank in a day
 
   //Setting variables to the proper names
-  public User(String name, int age, float weight, float height, String gender){
+  public User(String name, int age, float weight, float height, String gender, float OuncesOfWater){
      this.fullName= name;
      this.age= age;
      this.weight= weight; //lbs
      this.height= height;
      this.gender= gender;
+     this.OuncesOfWater = OuncesOfWater;
   }
 
 
@@ -26,13 +27,13 @@ public class User{                      //Define all the classes and methods her
   }
   
   public float WaterNeededaDay(){
-	  if(gender == "F" || gender == "f"){
+	  
+	  if(gender.equals("F") || gender.equals("f")){
 		  return OuncesOfWater - (weight * (float)0.45);
 	  }
-	  else if(gender == "M" || gender == "m"){
+	  else if(gender.equals("M") || gender.equals("m")){
 		  return OuncesOfWater - (weight * (float)0.5);
-	  }
-	  else{
+	  } else {
 		  System.out.println("INVALID INPUT: Please run program again and enter M or F");
 		  return 0;
 	  }
@@ -55,55 +56,19 @@ public class User{                      //Define all the classes and methods her
 	   gender = scanner.nextLine();
 	   System.out.print("How much water do you drink a day (in oz): ");    //Gets amount of water drank
 	   OuncesOfWater = scanner.nextFloat();
+	   scanner.nextLine();
  }
    
-   public String getFullName() {
-       return fullName;
-   }
-
-   public void setFullName(String fullName) {
-       this.fullName = fullName;
-   }
-
-   public int getAge() {
-       return age;
-   }
-
-   public void setAge(int age) {
-       this.age = age;
-   }
-
-   public float getHeight() {
-       return height;
-   }
-
-   public void setHeight(float height) {
-       this.height = height;
-   }
-
-   public float getWeight() {
-       return weight;
-   }
-
-   public void setWeight(float weight) {
-       this.weight = weight;
-   }
-
-   public String getGender() {
-       return gender;
-   }
-
-   public void setGender(String gender) {
-       this.gender = gender;
-   }
-
-   public float getOuncesOfWater() {
+   public float getOz() {
        return OuncesOfWater;
    }
-
-   public void setOuncesOfWater(float OuncesOfWater) {
-       this.OuncesOfWater = OuncesOfWater;
-   }
  
+   public String getGen() {
+	   return gender;
+   }
+   
+   public String getFullName() {
+	   return fullName;
+   }
  
 }

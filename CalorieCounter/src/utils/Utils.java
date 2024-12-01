@@ -10,8 +10,7 @@ import java.util.Scanner;
 public class Utils{
 
   public static void Header(){
-      System.out.println("This will Calculate your BMI and Macronutrients for the foods you have or will eat");
-      System.out.println("First step is to push the macronutrients up hamzas ass until his lemmas have been pumped n hes legal");
+      System.out.println("This will calculate your BMI and Macronutrients for the foods you have eaten or will eat");
       
   }
 
