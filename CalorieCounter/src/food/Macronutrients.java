@@ -66,17 +66,17 @@ public class Macronutrients {
   public void getMacros() {
 	   Scanner scanner = new Scanner(System.in);
 	   System.out.println("What are you eating today big back?");
-	   this.food = scanner.next();
+	   food = scanner.next();
 	   System.out.print("Enter the amount of fats (g):");
-	   this.fats = scanner.nextFloat();
+	   fats = scanner.nextFloat();
 	   System.out.print("Enter the amount of carbs (g):");    //Gets users age
-	   this.carbs = scanner.nextFloat();
+	   carbs = scanner.nextFloat();
 	   scanner.nextLine(); // Consume newline character
 	   System.out.print("Enter the amount of fiber: ");    //Gets users height
-	   this.fiber = scanner.nextFloat();
+	   fiber = scanner.nextFloat();
 	   scanner.nextLine(); // Consume newline character
 	   System.out.print("Enter the amount of protein: ");    //Gets users weight
-	   this.protein = scanner.nextFloat();
+	   protein = scanner.nextFloat();
 	   scanner.nextLine(); // Consume newline character
 	   scanner.close();
  }
