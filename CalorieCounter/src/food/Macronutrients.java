@@ -27,7 +27,7 @@ public class Macronutrients{
   public float getFiber(){
     return fiber;
   }
-  public float getProtein(){
+  public float getprotein(){
     return protein;
   }
   public float getCalories(){
