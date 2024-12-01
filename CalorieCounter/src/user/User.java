@@ -8,7 +8,7 @@ public class User{                      //Define all the classes and methods her
       private float height;
       private float weight;
       private String gender;
-      private double OuncesOfWater; // water drank in a day
+      private float OuncesOfWater; // water drank in a day
 
   //Setting variables to the proper names
   public User(String name, int age, float weight, float height, String gender){
@@ -25,17 +25,17 @@ public class User{                      //Define all the classes and methods her
       return BMI;
   }
   
-  public double WaterNeededaDay(){
+  public float WaterNeededaDay(){
 	  if(gender == "F" || gender == "f"){
-		  return OuncesOfWater - (weight * .45);
+		  return OuncesOfWater - (weight * (float)0.45);
 	  }
 	  else if(gender == "M" || gender == "m"){
-		  return OuncesOfWater - (weight * .5);
+		  return OuncesOfWater - (weight * (float)0.5);
 	  }
 	  else{
 		  System.out.println("INVALID INPUT: Please run program again and enter M or F");
+		  return 0;
 	  }
-	  
   }
    public void getUserInfo(){
 
@@ -49,12 +49,12 @@ public class User{                      //Define all the classes and methods her
 	   height = scanner.nextFloat();
 	   scanner.nextLine(); // Consume newline character
 	   System.out.print("Enter your weight in (lbs): ");    //Gets users weight
-	   gender = scanner.nextLine();
+	   weight = scanner.nextFloat();
 	   scanner.nextLine(); // Consume newline character
 	   System.out.print("Enter your gender (M/F): ");    //Gets users gender
 	   gender = scanner.nextLine();
-	   System.out.print("How much water do you drink a day: ");    //Gets amount of water drank
-	   OuncesOfWater = scanner.nextInt();
+	   System.out.print("How much water do you drink a day (in oz): ");    //Gets amount of water drank
+	   OuncesOfWater = scanner.nextFloat();
 	   scanner.close();
  }
    
@@ -98,11 +98,11 @@ public class User{                      //Define all the classes and methods her
        this.gender = gender;
    }
 
-   public double getOuncesOfWater() {
+   public float getOuncesOfWater() {
        return OuncesOfWater;
    }
 
-   public void setOuncesOfWater(double OuncesOfWater) {
+   public void setOuncesOfWater(float OuncesOfWater) {
        this.OuncesOfWater = OuncesOfWater;
    }
  
