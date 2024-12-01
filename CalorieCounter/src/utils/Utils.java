@@ -13,23 +13,24 @@ public class Utils{
       
   }
 
-  public void getMacros() {
-	   Scanner scanner = new Scanner(System.in);
-	   System.out.print("Enter the amount of fats (g):");
-	   fullName = scanner.nextLine();
-	   System.out.print("Enter the amount of carbs (g):");    //Gets users age
-	   age = scanner.nextInt();
-	   scanner.nextLine(); // Consume newline character
-	   System.out.print("Enter the amount of fiber: ");    //Gets users height
-	   height = scanner.nextFloat();
-	   scanner.nextLine(); // Consume newline character
-	   System.out.print("Enter the amount of protein: ");    //Gets users weight
-	   gender = scanner.nextLine();
-	   scanner.nextLine(); // Consume newline character
-	   scanner.close();
+  
+ public void Macromath (Macronutrients Macros) {
+	 
+  float fatcals = Macros.getFats() * 9;
+  float carbcals = Macros.getCarbs() * 4;
+  float fibercals = Macros.getFiber() * 2;
+  float proteincals = Macros.getProtein() * 4;
+  float totalcal = fatcals + carbcals + fibercals + proteincals;
+  
+  
+  System.out.println("Total Calories from Fats: " + fatcals);
+  System.out.println("Total Calories from Carbs: " + carbcals);
+  System.out.println("Total Calories from Fibers: " + fibercals);
+  System.out.println("Total Calories from Protein: " + proteincals);
+  System.out.println("Total Calories consumed: " + totalcal);
+
+ }
+  
+ 
   }
 
-
-
-
-}
