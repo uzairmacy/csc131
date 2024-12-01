@@ -2,8 +2,7 @@ package user;
 
 import java.util.Scanner;
 
-
-class User{                      //Define all the classes and methods here
+public class User{                      //Define all the classes and methods here
       private String fullName;
       private int age;
       private float height;
