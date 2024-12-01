@@ -1,18 +1,19 @@
 package food;
 
 import java.util.Scanner;
+import java.util.*;
 
 
 public class Macronutrients {
+  private String name;
   private float fats;
-  private String food;
   private float carbs;
   private float fiber;
   private float protein;
   private float calories;
 
-  public Macronutrients(String food, float fats, float carbs, float fiber, float protein, float calories) {
-    this.food = food;
+  public Macronutrients(String name, float fats, float carbs, float fiber, float protein, float calories) {
+    this.name = name;
 	this.fats = fats;
     this.carbs = carbs;
     this.fiber = fiber;
@@ -40,8 +41,8 @@ public class Macronutrients {
     return calories;
   }
   
-  public void setName(String food) {
-	this.food = food;
+  public void setName(String name) {
+	this.name = name;
   }
   
   public void setFats(float fats){
@@ -65,8 +66,8 @@ public class Macronutrients {
   }
   public void getMacros() {
 	   Scanner scanner = new Scanner(System.in);
-	   System.out.println("What are you eating today big back?");
-	   food = scanner.next();
+	   System.out.println("Enter the food you've eaten:");
+	   name = scanner.nextLine();
 	   System.out.print("Enter the amount of fats (g):");
 	   fats = scanner.nextFloat();
 	   System.out.print("Enter the amount of carbs (g):");    //Gets users age

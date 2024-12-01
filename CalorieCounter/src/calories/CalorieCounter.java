@@ -14,6 +14,8 @@ public class CalorieCounter {
 		User newUser = new User(null, 0, 0, 0, null);
 		newUser.getUserInfo();
 		
+		System.out.println(""
+		
 		System.out.println("Hey " + newUser.getFullName() + "! What did you eat today?");
 		
 		List<Macronutrients> macros = new ArrayList<>();
@@ -21,7 +23,7 @@ public class CalorieCounter {
 		tmpMacros.getMacros();
 		macros.add(tmpMacros);
 		
-		utils.Macromath(macros.get(0));
+		utils.Macromath(tmpMacros);
 		
 	}
 }

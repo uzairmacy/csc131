@@ -55,7 +55,6 @@ public class User{                      //Define all the classes and methods her
 	   gender = scanner.nextLine();
 	   System.out.print("How much water do you drink a day (in oz): ");    //Gets amount of water drank
 	   OuncesOfWater = scanner.nextFloat();
-	   scanner.close();
  }
    
    public String getFullName() {
