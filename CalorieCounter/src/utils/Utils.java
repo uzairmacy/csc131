@@ -10,7 +10,9 @@ import java.util.Scanner;
 public class Utils{
 
   public static void Header(){
-      System.out.println("This will calculate your BMI and Macronutrients for the foods you have eaten or will eat");
+	  System.out.println("========================================================================================");
+	  System.out.println("This will calculate your BMI and Macronutrients for the foods you have eaten or will eat");
+      System.out.println("========================================================================================");
       
   }
 
@@ -22,26 +24,37 @@ public class Utils{
   float fibercals = Macros.getFiber() * 2;
   float proteincals = Macros.getProtein() * 4;
   float totalcal = fatcals + carbcals + fibercals + proteincals;
-  
-  
-  System.out.println("Total Calories from Fats: " + fatcals);
-  System.out.println("Total Calories from Carbs: " + carbcals);
-  System.out.println("Total Calories from Fibers: " + fibercals);
-  System.out.println("Total Calories from Protein: " + proteincals);
+  System.out.println("\n========================================================================================");
+  System.out.println("                             Calories you have consumed ");
+  System.out.println("========================================================================================");
+  System.out.println("Fats: " + fatcals);
+  System.out.println("Carbs: " + carbcals);
+  System.out.println("Fibers: " + fibercals);
+  System.out.println("Protein: " + proteincals);
   System.out.println("Total Calories consumed: " + totalcal);
   
-  System.out.println("Some foods high in Healthy Fats: Avacado, Salmon, Nuts, Dairy Products, Fish");
-  System.out.println("Some foods low in Healthy Fatys: Vegetables, Fruits, Nonfat & low-fat products, Egg whites");
-  System.out.println("Some foods high in Healthy Carbs: Whole grains, White rice, Wheat bread, beans, WHole eggs");
-  System.out.println("Some foods low in Healthy Carbs: Egg whites, Vegetables, Greek yogurt, Fish, Sugar free dairy products");
-  System.out.println("Some foods high in Healthy Fibers: Beans, Fruits, Chia seeds, Nuts & Seeds, Avacados");
-  System.out.println("Some foods low in Healthy Fibers: Cereal, Meats, Pasta, Rice, Baked goods");
-  System.out.println("Some foods high in Healthy Proteins: Chicken breast, Salmon, Whole eggs, Brown rice, Lentils, Tofu");
-  System.out.println("Some foods low in Healthy Proteins: Fruits, Vegetable, Healthy fats, Grains");
   
 
  }
   
- 
+ public void FoodSuggestions() {
+	 
+	  System.out.println("\n========================================================================================");
+	  System.out.println("                                Food Suggestions ");
+	  System.out.println("========================================================================================");
+	  System.out.println("High in Healthy Fats: \nAvacado, Salmon, Nuts, Dairy Products, Fish");
+	  System.out.println("Low in Healthy Fats: \nVegetables, Fruits, Nonfat & low-fat products, Egg whites");
+	  System.out.println("--------------------------------------------------------------------------------------");
+	  System.out.println("High in Healthy Carbs: \nWhole grains, White rice, Wheat bread, beans, WHole eggs");
+	  System.out.println("Low in Healthy Carbs: \nEgg whites, Vegetables, Greek yogurt, Fish, Sugar free dairy products");
+	  System.out.println("--------------------------------------------------------------------------------------");
+	  System.out.println("High in Healthy Fibers: \nBeans, Fruits, Chia seeds, Nuts & Seeds, Avacados");
+	  System.out.println("Low in Healthy Fibers: \nCereal, Meats, Pasta, Rice, Baked goods");
+	  System.out.println("--------------------------------------------------------------------------------------");
+	  System.out.println("High in Healthy Proteins: \nChicken breast, Salmon, Whole eggs, Brown rice, Lentils, Tofu");
+	  System.out.println("Low in Healthy Proteins: \nFruits, Vegetable, Healthy fats, Grains");
+	  System.out.println("--------------------------------------------------------------------------------------");
+	 
+ }
   }
 

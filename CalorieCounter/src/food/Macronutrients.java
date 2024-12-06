@@ -46,12 +46,12 @@ public class Macronutrients {
 	   System.out.print("Enter the amount of carbs (g):");    //Gets users age
 	   carbs = scanner.nextFloat();
 	   scanner.nextLine(); // Consume newline character
-	   System.out.print("Enter the amount of fiber: ");    //Gets users height
+	   System.out.print("Enter the amount of fiber: (g)");    //Gets users height
 	   fiber = scanner.nextFloat();
 	   scanner.nextLine(); // Consume newline character
-	   System.out.print("Enter the amount of protein: ");    //Gets users weight
+	   System.out.print("Enter the amount of protein: (g)");    //Gets users weight
 	   protein = scanner.nextFloat();
 	   scanner.nextLine(); // Consume newline character
-	   scanner.close();
+	   
  }
 }

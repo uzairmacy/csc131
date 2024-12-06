@@ -29,10 +29,10 @@ public class User{                      //Define all the classes and methods her
   public float WaterNeededaDay(){
 	  
 	  if(gender.equals("F") || gender.equals("f")){
-		  return OuncesOfWater - (weight * (float)0.45);
+		  return (weight * (float)0.45) - OuncesOfWater;
 	  }
 	  else if(gender.equals("M") || gender.equals("m")){
-		  return OuncesOfWater - (weight * (float)0.5);
+		  return (weight * (float)0.5) - OuncesOfWater;
 	  } else {
 		  System.out.println("INVALID INPUT: Please run program again and enter M or F");
 		  return 0;
