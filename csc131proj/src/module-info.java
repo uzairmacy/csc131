@@ -4,5 +4,5 @@
 /**
  * 
  */
-module Lab02 {
+module csc131proj {
 }
